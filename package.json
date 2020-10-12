@@ -1,0 +1,29 @@
+{
+  "name": "every_toy_server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Ho-Joon-Kim/every_toy_server.git",
+  "author": "Ho-Joon-Kim <a01098930999@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "babel-node src/index.js",
+    "start:dev": "nodemon --exec babel-node src/ src/index.js --delay 2"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@koa/cors": "^3.1.0",
+    "@koa/router": "^9.4.0",
+    "dotenv": "^8.2.0",
+    "koa": "^2.13.0",
+    "koa-body": "^4.2.0",
+    "koa-logger": "^3.2.1",
+    "mariadb": "^2.4.2",
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
