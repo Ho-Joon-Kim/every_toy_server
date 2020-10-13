@@ -6,6 +6,7 @@ import http from 'http';
 import cors from '@koa/cors';
 
 import api  from './api';
+import db  from './db';
 
 const app = new Koa();
 const router = new Router();
