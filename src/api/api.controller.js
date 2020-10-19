@@ -65,7 +65,8 @@ exports.many = (async (ctx,next) => {
       "all" : rows[0]['output'],
       "web" : rows[1]['output'],
       "app" : rows[2]['output'],
-      "guitar" : rows[3]['output']
+      "game" : rows[3]['output'],
+      "guitar" : rows[4]['output']
     };
   };
 
