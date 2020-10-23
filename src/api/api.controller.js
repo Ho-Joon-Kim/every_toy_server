@@ -11,8 +11,8 @@ const connection = mariadb.createPool({//db 연결용 변수, 내부 변수는 �
  
 exports.thread = (async (ctx,next) => {
   const { pagenum } = ctx.params;
-  const { sort } = ctx.request.body;
-  const { category } = ctx.request.body;
+  const { sort } = ctx.request.header;
+  const { category } = ctx.request.header;
   const start = (20 * pagenum);
   let sql,rows,status,body,option = '';
 
